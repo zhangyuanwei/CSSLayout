@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
     <declare-styleable name="CSSLayout">
+
+        <attr name="direction" format="enum">
+            <enum name="inherit" value="0"></enum>
+            <enum name="ltr" value="1"></enum>
+            <enum name="rtl" value="2"></enum>
+        </attr>
+
+        <attr name="flexDirection" format="enum">
+            <enum name="column" value="0"></enum>
+            <enum name="column_reverse" value="1"></enum>
+            <enum name="row" value="2"></enum>
+            <enum name="row_reverse" value="3"></enum>
+        </attr>
+
+        <attr name="justifyContent" format="enum">
+            <enum name="flex_start" value="0"></enum>
+            <enum name="center" value="1"></enum>
+            <enum name="flex_end" value="2"></enum>
+            <enum name="space_between" value="3"></enum>
+            <enum name="space_around" value="4"></enum>
+        </attr>
+
+        <attr name="alignContent" format="enum">
+            <enum name="auto" value="0"></enum>
+            <enum name="flex_start" value="1"></enum>
+            <enum name="center" value="2"></enum>
+            <enum name="flex_end" value="3"></enum>
+            <enum name="stretch" value="4"></enum>
+        </attr>
+
+        <attr name="alignItems" format="enum">
+            <enum name="auto" value="0"></enum>
+            <enum name="flex_start" value="1"></enum>
+            <enum name="center" value="2"></enum>
+            <enum name="flex_end" value="3"></enum>
+            <enum name="stretch" value="4"></enum>
+        </attr>
+
+        <attr name="flexWrap" format="enum">
+            <enum name="nowrap" value="0"></enum>
+            <enum name="wrap" value="1"></enum>
+        </attr>
+
+        <attr name="padding" format="dimension"></attr>
+        <attr name="paddingLeft" format="dimension"></attr>
+        <attr name="paddingRight" format="dimension"></attr>
+        <attr name="paddingTop" format="dimension"></attr>
+        <attr name="paddingBottom" format="dimension"></attr>
+        <attr name="borderWidth" format="dimension"></attr>
+        <attr name="borderLeftWidth" format="dimension"></attr>
+        <attr name="borderRightWidth" format="dimension"></attr>
+        <attr name="borderTopWidth" format="dimension"></attr>
+        <attr name="borderBottomWidth" format="dimension"></attr>
+
+    </declare-styleable>
+    <declare-styleable name="CSSLayout_LayoutParams">
         <!--
         <attr name="layout_width" format="dimension"></attr>
         <attr name="layout_height" format="dimension"></attr>
@@ -18,16 +74,6 @@
         <attr name="layout_marginRight" format="dimension"></attr>
         <attr name="layout_marginTop" format="dimension"></attr>
         <attr name="layout_marginBottom" format="dimension"></attr>
-        <attr name="layout_padding" format="dimension"></attr>
-        <attr name="layout_paddingLeft" format="dimension"></attr>
-        <attr name="layout_paddingRight" format="dimension"></attr>
-        <attr name="layout_paddingTop" format="dimension"></attr>
-        <attr name="layout_paddingBottom" format="dimension"></attr>
-        <attr name="layout_borderWidth" format="dimension"></attr>
-        <attr name="layout_borderLeftWidth" format="dimension"></attr>
-        <attr name="layout_borderRightWidth" format="dimension"></attr>
-        <attr name="layout_borderTopWidth" format="dimension"></attr>
-        <attr name="layout_borderBottomWidth" format="dimension"></attr>
         <attr name="layout_alignSelf" format="enum">
             <enum name="auto" value="0"></enum>
             <enum name="flex_start" value="1"></enum>
@@ -41,41 +87,5 @@
             <enum name="absolute" value="1"></enum>
         </attr>
 
-        <!-- 父节点的属性 -->
-        <attr name="layout_flexDirection" format="enum">
-            <enum name="column" value="0"></enum>
-            <enum name="column_reverse" value="1"></enum>
-            <enum name="row" value="2"></enum>
-            <enum name="row_reverse" value="3"></enum>
-        </attr>
-
-        <attr name="layout_justifyContent" format="enum">
-            <enum name="flex_start" value="0"></enum>
-            <enum name="center" value="1"></enum>
-            <enum name="flex_end" value="2"></enum>
-            <enum name="space_between" value="3"></enum>
-            <enum name="space_around" value="4"></enum>
-        </attr>
-
-        <attr name="layout_alignItems" format="enum">
-            <enum name="auto" value="0"></enum>
-            <enum name="flex_start" value="1"></enum>
-            <enum name="center" value="2"></enum>
-            <enum name="flex_end" value="3"></enum>
-            <enum name="stretch" value="4"></enum>
-        </attr>
-
-        <attr name="layout_alignContent" format="enum">
-            <enum name="auto" value="0"></enum>
-            <enum name="flex_start" value="1"></enum>
-            <enum name="center" value="2"></enum>
-            <enum name="flex_end" value="3"></enum>
-            <enum name="stretch" value="4"></enum>
-        </attr>
-
-        <attr name="layout_flexWrap" format="enum">
-            <enum name="nowrap" value="0"></enum>
-            <enum name="wrap" value="1"></enum>
-        </attr>
     </declare-styleable>
 </resources>

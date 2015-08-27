@@ -4,55 +4,59 @@
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:tag="wrapper"
+    android:tag="ScrollView"
     tools:context=".MainActivity">
 
     <me.zhangyuanwei.csslayout.CSSLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:tag="wrapper">
+        android:tag="Wrapper">
 
         <me.zhangyuanwei.csslayout.CSSLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#ff385f"
-            android:tag="text"
+            android:tag="r1"
+            css:alignItems="stretch"
             css:layout_margin="20dp"
-            css:layout_padding="10dp"
-            css:layout_alignItems="stretch"
-            android:id="@+id/">
+            css:padding="10dp">
 
             <View
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:background="#688bff"></View>
+                android:background="#688bff"
+                android:tag="r1r1"></View>
 
-            <me.zhangyuanwei.csslayout.MyTextView
+            <TextView
                 android:background="#00ff50"
                 android:gravity="center"
+                android:tag="r1r2"
                 android:text="这是一个测试用例" />
 
 
             <me.zhangyuanwei.csslayout.CSSLayout
                 android:layout_width="80dip"
                 android:layout_height="30dip"
-                android:background="#ffbc3e">
+                android:background="#ffbc3e"
+                android:tag="r1r3">
 
             </me.zhangyuanwei.csslayout.CSSLayout>
 
             <me.zhangyuanwei.csslayout.CSSLayout
                 android:layout_width="40dip"
                 android:layout_height="30dip"
-                android:background="#688bff">
+                android:background="#688bff"
+                android:tag="r1r4">
 
             </me.zhangyuanwei.csslayout.CSSLayout>
 
-            <me.zhangyuanwei.csslayout.MyTextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#544299"
                 android:gravity="center"
+                android:tag="r1r5"
                 android:text="我还能居中吗？"
                 css:layout_alignSelf="center" />
 
@@ -61,77 +65,70 @@
 
         <me.zhangyuanwei.csslayout.CSSLayout
             android:background="#544299"
-            android:tag="r1"
-            css:layout_flexDirection="row"
+            android:tag="r2"
+            css:flexDirection="row"
             css:layout_margin="10dip"
-            css:layout_padding="10dip">
+            css:padding="10dip">
 
             <me.zhangyuanwei.csslayout.CSSLayout
                 android:background="#ff0058"
-                android:tag="c1"
+                android:tag="r2c1"
                 css:layout_flex="1">
 
                 <TextView
                     android:background="#ffffff"
                     android:gravity="center"
+                    android:tag="r2c1r1"
                     android:text="第一行第一列" />
             </me.zhangyuanwei.csslayout.CSSLayout>
 
             <me.zhangyuanwei.csslayout.CSSLayout
                 android:background="#ffbc3e"
-                android:tag="c2"
+                android:tag="r2c2"
                 css:layout_flex="2"
                 css:layout_margin="20dip">
 
                 <TextView
                     android:background="#ffffff"
                     android:gravity="center"
-                    android:text="第一行第二列"
-                    android:id="@+id/" />
+                    android:tag="r2c2r1"
+                    android:text="第一行第二列" />
+
             </me.zhangyuanwei.csslayout.CSSLayout>
 
             <me.zhangyuanwei.csslayout.CSSLayout
                 android:background="#0028ff"
-                android:tag="c3"
+                android:tag="r2c3"
                 css:layout_flex="3"
                 css:layout_margin="30dip">
 
                 <TextView
                     android:background="#ffffff"
                     android:gravity="center"
+                    android:tag="r2c3r1"
                     android:text="第一行第三列" />
             </me.zhangyuanwei.csslayout.CSSLayout>
 
         </me.zhangyuanwei.csslayout.CSSLayout>
 
         <me.zhangyuanwei.csslayout.CSSLayout
-            android:background="#00ff50"
-            android:tag="r2"
-            css:layout_margin="20dip"
-            css:layout_padding="20dip">
-
-            <TextView
-                android:background="#ffffff"
-                android:gravity="center"
-                android:text="第二行" />
-        </me.zhangyuanwei.csslayout.CSSLayout>
-
-        <me.zhangyuanwei.csslayout.CSSLayout
             android:background="#ff6600"
             android:tag="r3"
 
-            css:layout_alignItems="center"
-            css:layout_flexWrap="wrap"
+            css:alignItems="center"
+            css:flexWrap="wrap"
             css:layout_margin="30dip">
 
             <TextView
                 android:background="#798bff"
                 android:gravity="center"
+                android:tag="r3r1"
                 android:text="第三行比较长长长长长长长长第一排" />
 
             <TextView
                 android:background="#baa8ff"
                 android:gravity="center"
+                android:tag="r3r2"
                 android:text="第三行更长长长长长长长长长长长长长长的第二排" />
         </me.zhangyuanwei.csslayout.CSSLayout>
 
@@ -139,64 +136,28 @@
         <me.zhangyuanwei.csslayout.CSSLayout
             android:layout_height="100dip"
             android:background="#21fff2"
-            android:tag="r3"
+            android:tag="r4"
 
-            css:layout_alignItems="center"
-            css:layout_flexWrap="wrap"
+            css:alignItems="center"
             css:layout_margin="30dip">
 
             <TextView
                 android:background="#798bff"
                 android:gravity="center"
+                android:padding="20dp"
+                android:tag="r4r1"
                 android:text="第三行比较长长长长长长长长第一排" />
+
 
             <TextView
                 android:background="#baa8ff"
                 android:gravity="center"
+                android:tag="r4r2"
                 android:text="第三行更长长长长长长长长长长长长长长的第二排" />
+
         </me.zhangyuanwei.csslayout.CSSLayout>
 
 
-        <me.zhangyuanwei.csslayout.CSSLayout
-            android:layout_height="100dip"
-            android:background="#b9ff71"
-            android:tag="r3"
-
-            css:layout_alignItems="center"
-            css:layout_flexWrap="wrap"
-            css:layout_margin="30dip">
-
-            <TextView
-                android:background="#798bff"
-                android:gravity="center"
-                android:text="第三行比较长长长长长长长长第一排" />
-
-            <TextView
-                android:background="#baa8ff"
-                android:gravity="center"
-                android:text="第三行更长长长长长长长长长长长长长长的第二排" />
-        </me.zhangyuanwei.csslayout.CSSLayout>
-
-
-        <me.zhangyuanwei.csslayout.CSSLayout
-            android:layout_height="100dip"
-            android:background="#688bff"
-            android:tag="r3"
-
-            css:layout_alignItems="center"
-            css:layout_flexWrap="wrap"
-            css:layout_margin="30dip">
-
-            <TextView
-                android:background="#798bff"
-                android:gravity="center"
-                android:text="第三行比较长长长长长长长长第一排" />
-
-            <TextView
-                android:background="#baa8ff"
-                android:gravity="center"
-                android:text="第三行更长长长长长长长长长长长长长长的第二排" />
-        </me.zhangyuanwei.csslayout.CSSLayout>
     </me.zhangyuanwei.csslayout.CSSLayout>
 
 </ScrollView>
